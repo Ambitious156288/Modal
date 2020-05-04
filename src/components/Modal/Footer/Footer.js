@@ -2,9 +2,12 @@ import React, { useContext } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import ModalContext from 'context';
+import Button from 'components/Modal/Button/Button';
 
 const StyledFooter = styled.div`
-  background-color: ${({ theme }) => theme.white};
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15vh;
 `;
 
 const Footer = ({ callToActionLabel }) => {
@@ -12,15 +15,15 @@ const Footer = ({ callToActionLabel }) => {
 
   return (
     <StyledFooter>
-      <button onClick={() => toggle()}>Cancel</button>
-      <button
+      <Button onClick={() => toggle()}>Cancel</Button>
+      <Button
         onClick={() => {
           alert('OK');
           toggle();
         }}
       >
         {callToActionLabel}
-      </button>
+      </Button>
     </StyledFooter>
   );
 };

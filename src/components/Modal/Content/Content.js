@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const StyledContent = styled.div`
-  background-color: ${({ theme }) => theme.white};
+  margin: 30px 0;
 `;
 
 const Content = ({ children }) => {
