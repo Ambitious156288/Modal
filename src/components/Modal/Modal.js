@@ -47,7 +47,7 @@ class Modal extends Component {
     return (
       <Provider value={{ toggle: this.toggle }}>
         {isOpen && <StyledBackDrop />}
-        <OutsideClick fun={this.toggle}>
+        <OutsideClick fun={() => this.setState({ isOpen: false })}>
           <Button onClick={this.toggle}>Modal</Button>
           {isOpen && <StyledModal>{this.props.children}</StyledModal>}
         </OutsideClick>
