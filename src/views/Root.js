@@ -1,13 +1,11 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import GlobalStyle from 'theme/GlobalStyle';
 import { theme } from 'theme/mainTheme';
 import Modal from 'components/Modal/Modal';
 
 const Root = () => (
   <>
     <ThemeProvider theme={theme}>
-      <GlobalStyle />
       <Modal>
         <Modal.Header title="Tytuł modala" />
         <Modal.Content>
