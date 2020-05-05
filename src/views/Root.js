@@ -6,8 +6,8 @@ import Modal from 'components/Modal/Modal';
 
 const Root = () => (
   <>
-    <GlobalStyle />
     <ThemeProvider theme={theme}>
+      <GlobalStyle />
       <Modal>
         <Modal.Header title="Tytuł modala" />
         <Modal.Content>

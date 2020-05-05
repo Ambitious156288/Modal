@@ -5,6 +5,7 @@ import Content from 'components/Modal/Content/Content';
 import Footer from 'components/Modal/Footer/Footer';
 import ModalContext from 'context';
 import Button from 'components/Modal/Button/Button';
+import OutsideClick from 'components/OutsideClick/OutsideClick';
 
 const { Provider } = ModalContext;
 
@@ -15,7 +16,7 @@ const StyledModal = styled.div`
   transform: translate(-50%, -50%);
   width: 70vw;
   height: 70vh;
-  border: 1px solid black;
+  border: 2px solid black;
   padding: 50px;
   z-index: 1000;
   background-color: ${({ theme }) => theme.white};
@@ -38,7 +39,6 @@ class Modal extends Component {
 
   toggle = () => {
     this.setState({ isOpen: !this.state.isOpen });
-    console.log(this.state.isOpen);
   };
 
   render() {
@@ -47,8 +47,10 @@ class Modal extends Component {
     return (
       <Provider value={{ toggle: this.toggle }}>
         {isOpen && <StyledBackDrop />}
-        <Button onClick={this.toggle}>Modal</Button>
-        {isOpen && <StyledModal>{this.props.children}</StyledModal>}
+        <OutsideClick fun={this.toggle}>
+          <Button onClick={this.toggle}>Modal</Button>
+          {isOpen && <StyledModal>{this.props.children}</StyledModal>}
+        </OutsideClick>
       </Provider>
     );
   }
