@@ -1,20 +1,18 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef } from 'react';
 import PropTypes from 'prop-types';
 
 const useOutsideClick = (ref, fun) => {
-  useEffect(() => {
-    const handleClickOutside = e => {
-      if (ref.current && !ref.current.contains(e.target)) {
-        fun();
-      }
-    };
+  const handleClickOutside = e => {
+    if (ref.current && !ref.current.contains(e.target)) {
+      fun();
+    }
+  };
 
-    document.addEventListener('mousedown', handleClickOutside);
+  document.addEventListener('mousedown', handleClickOutside);
 
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, [ref]);
+  return () => {
+    document.removeEventListener('mousedown', handleClickOutside);
+  };
 };
 
 const OutsideClick = ({ children, fun }) => {
