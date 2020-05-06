@@ -29,7 +29,11 @@ const Footer = ({ callToActionLabel }) => {
 };
 
 Footer.propTypes = {
-  callToActionLabel: PropTypes.string.isRequired,
+  callToActionLabel: PropTypes.string,
+};
+
+Footer.defaultProps = {
+  callToActionLabel: 'Udało się',
 };
 
 export default Footer;
