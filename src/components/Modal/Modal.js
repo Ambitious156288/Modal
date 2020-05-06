@@ -33,6 +33,10 @@ const StyledBackDrop = styled.div`
 `;
 
 class Modal extends Component {
+  static Header = Header;
+  static Content = Content;
+  static Footer = Footer;
+
   state = {
     isOpen: true,
   };
@@ -58,9 +62,5 @@ class Modal extends Component {
     );
   }
 }
-
-Modal.Header = Header;
-Modal.Content = Content;
-Modal.Footer = Footer;
 
 export default Modal;
