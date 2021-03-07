@@ -1,11 +1,11 @@
 {
-  "main.js": "/challenge/static/js/main.1f455b3b.chunk.js",
-  "main.js.map": "/challenge/static/js/main.1f455b3b.chunk.js.map",
-  "runtime~main.js": "/challenge/static/js/runtime~main.6401465a.js",
-  "runtime~main.js.map": "/challenge/static/js/runtime~main.6401465a.js.map",
-  "static/js/2.dbfa6da4.chunk.js": "/challenge/static/js/2.dbfa6da4.chunk.js",
-  "static/js/2.dbfa6da4.chunk.js.map": "/challenge/static/js/2.dbfa6da4.chunk.js.map",
-  "index.html": "/challenge/index.html",
-  "precache-manifest.c4cf7ade8a0bb40e810e26508c1c3275.js": "/challenge/precache-manifest.c4cf7ade8a0bb40e810e26508c1c3275.js",
-  "service-worker.js": "/challenge/service-worker.js"
+  "main.js": "/Modal/static/js/main.82dc3fc8.chunk.js",
+  "main.js.map": "/Modal/static/js/main.82dc3fc8.chunk.js.map",
+  "runtime~main.js": "/Modal/static/js/runtime~main.ce23ebaf.js",
+  "runtime~main.js.map": "/Modal/static/js/runtime~main.ce23ebaf.js.map",
+  "static/js/2.d4d4a164.chunk.js": "/Modal/static/js/2.d4d4a164.chunk.js",
+  "static/js/2.d4d4a164.chunk.js.map": "/Modal/static/js/2.d4d4a164.chunk.js.map",
+  "index.html": "/Modal/index.html",
+  "precache-manifest.606220d368250d1bc87da35695d173c4.js": "/Modal/precache-manifest.606220d368250d1bc87da35695d173c4.js",
+  "service-worker.js": "/Modal/service-worker.js"
 }
